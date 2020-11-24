@@ -16,7 +16,6 @@ class EditItemViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var editNameField: UITextField!
 	@IBOutlet weak var editAttr1Field: UITextField!
 	@IBOutlet weak var editAttr2Field: UITextField!
-//	@IBOutlet weak var saveButton: UIButton!
 	@IBAction func saveButton(_ sender: Any) {
 		saveChanges()
 	}

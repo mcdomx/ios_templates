@@ -12,11 +12,10 @@ class ItemViewController: UIViewController {
 	
 	var appDelegate: AppDelegate?
 	var selectedItem: Item?
-
+	
 	@IBOutlet weak var itemName: UILabel!
 	@IBOutlet weak var itemAttr1: UILabel!
 	@IBOutlet weak var itemAttr2: UILabel!
-//	@IBOutlet weak var editItemButton: UIButton!
 	@IBAction func editItemButton(_ sender: Any) {
 		performSegue(withIdentifier: "editItem", sender: nil)
 	}

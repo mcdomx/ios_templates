@@ -174,17 +174,17 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-		switch sender as! SegueType {
-		case .view :
+//		switch sender as! SegueType {
+//		case .view :
 			if let itemViewController = segue.destination as? ItemViewController {
 				itemViewController.selectedItem = currentItem
 				itemViewController.appDelegate = self.appDelegate
 			}
-		case .add:
-			if let addItemViewController = segue.destination as? AddItemViewController {
+//		case .add:
+//			if let addItemViewController = segue.destination as? AddItemViewController {
 //				addItemViewController.appDelegate = self.appDelegate
-			}
-		}
+//			}
+//		}
 		
 	}
 	
