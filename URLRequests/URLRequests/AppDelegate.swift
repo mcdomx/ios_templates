@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  volumeButtonInput
+//  URLRequests
 //
-//  Created by Mark on 11/24/20.
+//  Created by Mark on 11/25/20.
 //
 
 import UIKit
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	     application to it. This property is optional since there are legitimate
 	     error conditions that could cause the creation of the store to fail.
 	    */
-	    let container = NSPersistentContainer(name: "volumeButtonInput")
+	    let container = NSPersistentContainer(name: "URLRequests")
 	    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
 	        if let error = error as NSError? {
 	            // Replace this implementation with code to handle the error appropriately.
