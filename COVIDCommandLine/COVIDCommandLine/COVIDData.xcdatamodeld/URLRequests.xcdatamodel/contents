@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Global" representedClassName=".Global" syncable="YES" codeGenerationType="class">
+        <attribute name="confirmed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="country_region" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deaths" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="province_state" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Global_STATS" representedClassName=".Global_STATS" syncable="YES" codeGenerationType="class">
+        <attribute name="confirmed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deaths" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="country_province" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Global_UID" inverseName="data" inverseEntity="Global_UID"/>
+    </entity>
+    <entity name="Global_UID" representedClassName=".Global_UID" syncable="YES" codeGenerationType="class">
+        <attribute name="country_region" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="province_state" optional="YES" attributeType="String"/>
+        <relationship name="data" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Global_STATS" inverseName="country_province" inverseEntity="Global_STATS"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="country_region"/>
+                <constraint value="province_state"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="US" representedClassName=".US" syncable="YES" codeGenerationType="class">
+        <attribute name="admin2" optional="YES" attributeType="String"/>
+        <attribute name="code3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="combined_key" optional="YES" attributeType="String"/>
+        <attribute name="confirmed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="country_region" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deaths" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fips" optional="YES" attributeType="String"/>
+        <attribute name="iso2" optional="YES" attributeType="String"/>
+        <attribute name="iso3" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="long_" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="province_state" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="US_STATS" representedClassName=".US_STATS" syncable="YES" codeGenerationType="class">
+        <attribute name="confirmed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deaths" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO"/>
+        <relationship name="uid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="US_UID" inverseName="data" inverseEntity="US_UID"/>
+    </entity>
+    <entity name="US_UID" representedClassName=".US_UID" syncable="YES" codeGenerationType="class">
+        <attribute name="admin2" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="code3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="combined_key" optional="YES" attributeType="String"/>
+        <attribute name="country_region" optional="YES" attributeType="String"/>
+        <attribute name="fips" optional="YES" attributeType="String"/>
+        <attribute name="iso2" optional="YES" attributeType="String"/>
+        <attribute name="iso3" optional="YES" attributeType="String"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="long_" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="province_state" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="US_STATS" inverseName="uid" inverseEntity="US_STATS"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Global" positionX="73.56732177734375" positionY="-799.4557037353516" width="128" height="134"/>
+        <element name="Global_STATS" positionX="97.5152587890625" positionY="-164.7007446289062" width="128" height="89"/>
+        <element name="Global_UID" positionX="-105.64794921875" positionY="-224.7268524169922" width="128" height="104"/>
+        <element name="US" positionX="-104.6964111328125" positionY="-803.0673522949219" width="128" height="239"/>
+        <element name="US_STATS" positionX="117.3463134765625" positionY="-361.9186401367188" width="128" height="103"/>
+        <element name="US_UID" positionX="-103.6417236328125" positionY="-511.8894500732422" width="128" height="209"/>
+    </elements>
+</model>

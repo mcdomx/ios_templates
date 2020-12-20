@@ -3,29 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990A47362577DEE500E99A04 /* COVIDData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 990A47342577DEE500E99A04 /* COVIDData.xcdatamodeld */; };
+		990AD2C325740B870068A9D2 /* URLRequests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 990AD2C125740B870068A9D2 /* URLRequests.xcdatamodeld */; };
+		9951E66A256F2B6D004C15A6 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9951E669256F2B6D004C15A6 /* DataViewController.swift */; };
+		996213F42571A02000C3ACA7 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 996213F32571A02000C3ACA7 /* SwiftCSV */; };
 		996A0C47256EF2AD0018B897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A0C46256EF2AD0018B897 /* AppDelegate.swift */; };
 		996A0C49256EF2AD0018B897 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A0C48256EF2AD0018B897 /* SceneDelegate.swift */; };
 		996A0C4B256EF2AD0018B897 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A0C4A256EF2AD0018B897 /* ViewController.swift */; };
 		996A0C4E256EF2AD0018B897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996A0C4C256EF2AD0018B897 /* Main.storyboard */; };
-		996A0C51256EF2AD0018B897 /* URLRequests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 996A0C4F256EF2AD0018B897 /* URLRequests.xcdatamodeld */; };
 		996A0C53256EF2AF0018B897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996A0C52256EF2AF0018B897 /* Assets.xcassets */; };
 		996A0C56256EF2AF0018B897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996A0C54256EF2AF0018B897 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		990A47352577DEE500E99A04 /* COVIDData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = COVIDData.xcdatamodel; sourceTree = "<group>"; };
+		990AD2C225740B870068A9D2 /* URLRequests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URLRequests.xcdatamodel; sourceTree = "<group>"; };
+		9951E669256F2B6D004C15A6 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		995A4F5525744486001C5E94 /* DBLoad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DBLoad.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		996213F62571A18C00C3ACA7 /* CSVDataFile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CSVDataFile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		996A0C43256EF2AD0018B897 /* URLRequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLRequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996A0C46256EF2AD0018B897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996A0C48256EF2AD0018B897 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		996A0C4A256EF2AD0018B897 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		996A0C4D256EF2AD0018B897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		996A0C50256EF2AD0018B897 /* URLRequests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URLRequests.xcdatamodel; sourceTree = "<group>"; };
 		996A0C52256EF2AF0018B897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996A0C55256EF2AF0018B897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996A0C57256EF2AF0018B897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996A0C5E256EFA6F0018B897 /* URLRequests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLRequests.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996213F42571A02000C3ACA7 /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,14 +67,19 @@
 		996A0C45256EF2AD0018B897 /* URLRequests */ = {
 			isa = PBXGroup;
 			children = (
+				996213F62571A18C00C3ACA7 /* CSVDataFile.playground */,
 				996A0C46256EF2AD0018B897 /* AppDelegate.swift */,
 				996A0C48256EF2AD0018B897 /* SceneDelegate.swift */,
 				996A0C4A256EF2AD0018B897 /* ViewController.swift */,
+				9951E669256F2B6D004C15A6 /* DataViewController.swift */,
 				996A0C4C256EF2AD0018B897 /* Main.storyboard */,
 				996A0C52256EF2AF0018B897 /* Assets.xcassets */,
+				990AD2C125740B870068A9D2 /* URLRequests.xcdatamodeld */,
+				990A47342577DEE500E99A04 /* COVIDData.xcdatamodeld */,
 				996A0C54256EF2AF0018B897 /* LaunchScreen.storyboard */,
 				996A0C57256EF2AF0018B897 /* Info.plist */,
-				996A0C4F256EF2AD0018B897 /* URLRequests.xcdatamodeld */,
+				996A0C5E256EFA6F0018B897 /* URLRequests.playground */,
+				995A4F5525744486001C5E94 /* DBLoad.playground */,
 			);
 			path = URLRequests;
 			sourceTree = "<group>";
@@ -86,6 +100,9 @@
 			dependencies = (
 			);
 			name = URLRequests;
+			packageProductDependencies = (
+				996213F32571A02000C3ACA7 /* SwiftCSV */,
+			);
 			productName = URLRequests;
 			productReference = 996A0C43256EF2AD0018B897 /* URLRequests.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 996A0C3A256EF2AD0018B897;
+			packageReferences = (
+				996213F22571A01F00C3ACA7 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 996A0C44256EF2AD0018B897 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,8 +162,10 @@
 			files = (
 				996A0C4B256EF2AD0018B897 /* ViewController.swift in Sources */,
 				996A0C47256EF2AD0018B897 /* AppDelegate.swift in Sources */,
+				9951E66A256F2B6D004C15A6 /* DataViewController.swift in Sources */,
+				990A47362577DEE500E99A04 /* COVIDData.xcdatamodeld in Sources */,
 				996A0C49256EF2AD0018B897 /* SceneDelegate.swift in Sources */,
-				996A0C51256EF2AD0018B897 /* URLRequests.xcdatamodeld in Sources */,
+				990AD2C325740B870068A9D2 /* URLRequests.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,13 +366,43 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		996213F22571A01F00C3ACA7 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		996213F32571A02000C3ACA7 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 996213F22571A01F00C3ACA7 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		996A0C4F256EF2AD0018B897 /* URLRequests.xcdatamodeld */ = {
+		990A47342577DEE500E99A04 /* COVIDData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				996A0C50256EF2AD0018B897 /* URLRequests.xcdatamodel */,
+				990A47352577DEE500E99A04 /* COVIDData.xcdatamodel */,
 			);
-			currentVersion = 996A0C50256EF2AD0018B897 /* URLRequests.xcdatamodel */;
+			currentVersion = 990A47352577DEE500E99A04 /* COVIDData.xcdatamodel */;
+			name = COVIDData.xcdatamodeld;
+			path = ../../COVIDData/Sources/COVIDData/Resources/COVIDData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		990AD2C125740B870068A9D2 /* URLRequests.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				990AD2C225740B870068A9D2 /* URLRequests.xcdatamodel */,
+			);
+			currentVersion = 990AD2C225740B870068A9D2 /* URLRequests.xcdatamodel */;
 			path = URLRequests.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
